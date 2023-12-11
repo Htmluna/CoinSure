@@ -1,0 +1,509 @@
+/* Importando a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap');
+
+:root {
+    --color-primary: #00cf84;
+    --color-secundary: #7650b5;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-font: #ffffff;
+    --color-dark: #000000;
+    --color-background: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+    overflow-x: hidden;
+}
+
+p{
+    color: #dbd4d4;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding: 15px 18px !important;
+}
+
+.navbar-brand.logo.text-uppercase {
+    font-size: 30px !important;
+    color: var(--color-primary) !important;
+    font-weight: 600;
+}
+
+.navbar-toggler{
+    color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    color: var(--color-primary);
+}
+
+.nav-item .nav-link {
+    color: var(--color-font);
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #7650B5, #00CF84);
+    transition: width 0.5s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+.nav-item .nav-link:hover {
+    color: var(--color-secundary) !important;
+}
+
+.bnt-navbar {
+    display: inline-block;
+    padding: 10px 43px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right, #7650b5, #00cf84);
+    position: relative;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.bnt-navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #7650b5, #00cf84);
+    border-image-slice: 1;
+    border-radius: 50px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Home */
+
+.img-home {
+    margin-right: 200px;
+    width: 580px;
+}
+
+.content-home2 {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content-home2 h1 {
+    color: white;
+    line-height: 60px;
+}
+
+.content-home2 span {
+    color: #00cf84;
+}
+
+.para-home {
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+    color: white;
+}
+
+.home-links,
+.home-links.btn-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    margin-top: 50px;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(to right, #7650b5, #00cf84);
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.home-links.btn-2 {
+    margin-top: 20px;
+}
+
+.home-links:hover,
+.home-links.btn-2:hover {
+    background: #7650b5;
+}
+
+
+/* Wallet */
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.subtitle {
+    max-width: 400px;
+    line-height: 24px;
+    margin: 14px 0px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bg-c-blue,
+.bg-c-green,
+.bg-c-yellow,
+.bg-c-pink {
+    background: linear-gradient(to right,#00cf84, #7650b5);
+}
+
+.content-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    flex: 0 0 calc(30% - 10px);
+    padding: 5px;
+    border-radius: 50px;
+    color: white !important;
+    box-shadow: 0 1px 2.94px 0.06px rgba(169, 18, 196, 0.16);
+    border: solid;
+    margin-bottom: 20px;
+}
+
+.card .card-block {
+    padding: 30px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.f-right {
+    color: #00cf84;
+}
+
+.f-right span, #negative, #negativo {
+    color: #8d68c7;
+}
+
+
+/* About */
+.box-container4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.home-about {
+    font-weight: 500;
+    color: white;
+    max-width: 100%;
+    line-height: 45px;
+    margin: 14px 0;
+    text-align: center;
+}
+
+.home-about span {
+    color: #00CF84;
+}
+
+.text-about {
+    max-width: 100%;
+    line-height: 24px;
+    margin: 14px 0;
+    text-align: center;
+    margin: 3px 69px 0 69px;
+}
+
+.box-container4 h6 {
+    font-size: 60px;
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #7650B5;
+    transition: color 2s ease;
+    text-align: center;
+    line-height: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.box-container4 h6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #7650B5, #00CF84);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: color 2s ease;
+    z-index: -1;
+}
+
+.box-container4 h6:hover {
+    color: #00CF84;
+}
+
+.box-container4 h6:hover::before {
+    background: #00CF84;
+}
+
+/*Poupcoin*/
+/* Estilo para o texto principal */
+.poupcoin-text {
+    font-size: 28px;
+    margin-top: 80px;
+    color: var(--color-secundary);
+    text-align: center;
+    width: 50%;
+}
+
+.poupcoin-text span {
+    color: var(--color-primary);
+}
+
+/* Estilo para o parágrafo de texto */
+.poup-text {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.poupcoin-text {
+    font-size: 40px;
+    width: 100%;
+}
+
+.box-container5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-coin1 {
+    flex: 0 0 calc(60% - 10px);
+    padding: 40px;
+    border-radius: 50px;
+    border: solid;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    background: linear-gradient(to right,#6729ca, #7650b5);
+}
+
+.name-card, .number-card {
+    background: none;
+    color: #fff;
+}
+
+.cvv {
+    background: none;
+    color: #fff;
+}
+
+.nubank-logo {
+    width: 50px;
+    background: none;
+}
+
+.card-coin2 {
+    color: #fff;
+}
+
+.poup {
+    flex: 0 0 calc(30% - 10px);
+    margin-top: 20px;
+}
+
+
+
+
+@media (min-width: 992px) {
+    /* Estilos para telas maiores ou iguais a 992px de largura */
+    .box-container2 {
+        text-align: left;
+    }
+
+    .img-home {
+        margin-right: 200px;
+        width: 580px;
+    }
+
+    .box-container2 {
+        margin-right: 0;
+    }
+
+    .content-home2 {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/* Estilos para telas menores que 992px de largura */
+@media (max-width: 991px) {
+    .img-home {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .box-container2 {
+        margin-right: 0;
+    }
+
+    .content-home2 {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .box-container2 {
+        text-align: center;
+    }
+
+    .box-container2 h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .para-home {
+        max-width: 100%;
+    }
+
+    .home-links,
+    .home-links.btn-2 {
+        padding: 10px 30px;
+    }
+}
+
+/* Estilos para telas menores que 768px de largura */
+@media (max-width: 767px) {
+
+    .navbar-brand.logo.text-uppercase {
+        font-size: 24px !important;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .bnt-navbar {
+        margin-left: 0;
+    }
+
+    .para-home {
+        width: 99%;
+    }
+
+    .card-coin1 {
+        margin-left: 30px;
+        width: calc(90% - 30px);
+        max-width: 100%;
+        padding: 16px 107px 18px 50px;
+    }
+
+    .name-card {
+        font-size: 16px;
+    }
+
+    .number-card {
+        font-size: 18px;
+    }
+
+    .poup {
+        margin-top: 20px;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .text-about {
+        text-align: justify;
+        color: white;
+        text-align: left;
+        width: 100%;
+    }
+}
